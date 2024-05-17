@@ -1,6 +1,7 @@
 const ed1 = codeMirror(document.querySelector('.ed1'));
 const ed2 = codeMirror(document.querySelector('.ed2'));
 const ed3 = codeMirror(document.querySelector('.ed3'), true);
+document.querySelector('.loader-body').remove();
 
 ed1.setValue(`{
   "name": "Sami",
