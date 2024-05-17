@@ -5,11 +5,17 @@ document.querySelector('.loader-body').remove();
 
 ed1.setValue(`{
   "name": "Sami",
-  "lastname": "Andi"
+  "lastname": "Andi",
+  "detail": {
+    "grade": 15,
+    "age": 20
+  }
 }`);
 
 ed2.setValue(`{
-  "fullname": data.name + " " + data.lastname
+  "fullname": data.name + " " + data.lastname,
+  "age" : data.detail.age,
+  "grade": data.detail.grade
 }`);
 
 function onInput() {
